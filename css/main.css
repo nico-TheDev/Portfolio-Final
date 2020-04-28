@@ -1067,4 +1067,8 @@ li {
 .connect textarea:focus {
   border-color: #54a0ff;
 }
+
+[data-netlify-recaptcha="true"] {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=main.css.map */
