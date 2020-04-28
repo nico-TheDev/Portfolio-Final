@@ -7,6 +7,10 @@
     background-color: $color-light-2;
     &__img{
         width: 100%;
+
+        @include query(cp){
+            width: 80%;
+        }
     }
 
     @include query(mid){
@@ -22,6 +26,10 @@
 
     @include query(mid){
         width: 100%;
+    }
+
+    @include query(cp){
+        width: 80%;
     }
 
     &__field{
