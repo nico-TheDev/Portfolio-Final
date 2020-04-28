@@ -8,9 +8,6 @@
     &__img{
         width: 100%;
 
-        @include query(cp){
-            width: 80%;
-        }
     }
 
     @include query(mid){
@@ -26,10 +23,6 @@
 
     @include query(mid){
         width: 100%;
-    }
-
-    @include query(cp){
-        width: 80%;
     }
 
     &__field{
@@ -74,8 +67,4 @@
     }
 
     
-}
-
-[data-netlify-recaptcha="true"]{
-    margin: 0 auto;
 }

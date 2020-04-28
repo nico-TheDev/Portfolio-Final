@@ -1017,12 +1017,6 @@ li {
   width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
-  .contact__img {
-    width: 80%;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   .contact {
     -ms-grid-columns: 1fr;
@@ -1040,12 +1034,6 @@ li {
 @media only screen and (max-width: 700px) {
   .connect {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .connect {
-    width: 80%;
   }
 }
 
@@ -1084,9 +1072,5 @@ li {
 .connect [type="email"]:focus,
 .connect textarea:focus {
   border-color: #54a0ff;
-}
-
-[data-netlify-recaptcha="true"] {
-  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
