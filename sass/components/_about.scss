@@ -1,0 +1,30 @@
+.section-about{
+    background-image: linear-gradient(rgba(black,0.8),rgba(black,0.6)),url(/img/bg1.jpg);
+    @include bgHero;
+    color: white;
+}
+
+.about{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.2rem;
+
+    @include query(tabp){
+        flex-direction: column;
+    }
+
+    &__icon{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+        box-shadow: 0 0 2rem rgba(white,0.3);
+
+        @include query(tabp){
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}

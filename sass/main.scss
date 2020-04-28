@@ -1,0 +1,24 @@
+// MAIN SASS FILE
+
+// BASE FILES
+@import "base/variables";
+@import "base/resets";
+@import "base/utilities";
+
+
+// LAYOUT FILES
+
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+// COMPONENTS
+
+@import "components/buttons";
+@import "components/skills";
+@import "components/offers";
+@import "components/projects";
+@import "components/testimonial";
+@import "components/logos";
+@import "components/about";
+@import "components/contact";

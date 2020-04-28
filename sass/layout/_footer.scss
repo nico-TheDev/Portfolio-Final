@@ -1,0 +1,64 @@
+.footer{
+    color: $color-light-2;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include query(mid){
+            flex-direction: column;
+
+            & > *:not(:last-child){
+                margin-bottom: 3rem;
+            }
+        }
+
+    }
+
+    &__logo{
+        width: 100px;
+    }
+
+    &__link{
+        margin: 0 0.5rem;
+    }
+
+    &__icon{
+        width: 3rem;
+        height: 3rem;
+        transition: fill 400ms;
+    }
+
+    .fb{
+        &:hover{
+            fill:blue;
+        }
+    }
+
+    .twitter{
+        &:hover{
+            fill:cyan;
+        }
+    }
+
+    .github{
+        &:hover{
+            fill:white;
+        }
+    }
+
+    .codepen{
+        &:hover{
+            fill:green;
+        }
+    }
+
+    .email{
+        &:hover{
+            fill:red;
+        }
+    }
+
+
+}

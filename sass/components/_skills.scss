@@ -1,0 +1,130 @@
+.skill-section{
+    padding: 4rem 0 10rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+    grid-gap: 3rem 1rem;
+    justify-items: center;
+    @include query(tabp){
+        grid-row-gap: 2rem;
+    }
+
+    @include query(cp){
+        grid-template-columns: 1fr;
+
+    }
+
+   
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    z-index: 0;
+    &--1{
+        background-color: rgba(#e34f26,0.2);
+        box-shadow: 0 0 1rem rgba(#e34f26,0.4);
+        bottom: 0;
+        right: 0;
+        transform: scale(2);
+    }
+
+    &--2{
+        background-color: rgba(#f7df1e,0.2);
+        box-shadow: 0 0 1rem rgba(#f7df1e,0.4);
+        top: 0;
+        right: 30%;
+        transform: scale(4);
+    }
+
+    &--3{
+        background-color: rgba(#e34f26,0.2);
+        box-shadow: 0 0 1rem rgba(#e34f26,0.4);
+        top: 15%;
+        left: -3rem;
+        transform: scale(3);
+    }
+
+    &--4{
+        background-color: rgba(#cc6699,0.2);
+        box-shadow: 0 0 1rem rgba(#cc6699,0.4);
+        bottom: 0;
+        left: 35%;
+        transform: scale(4);
+    }
+}
+
+.skill{
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 1rem rgba(black,0.2);
+    transition: transform 300ms ;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+
+    @include query(cp){
+        width:14rem;
+        height:14rem;
+    }
+
+   
+
+    &:hover{
+        transform: translateY(-1rem) scale(1.1);
+    }
+    &--1{
+        box-shadow: 0 3px 1rem rgba(#e34f26,0.4); 
+        color: #e34f26; 
+        
+    }
+
+    &--2{
+        box-shadow: 0 3px 1rem rgba(#1572b6,0.4); 
+        color: #1572b6; 
+        position: relative;
+        top: 6rem;
+        @include query(tabp){
+            top:0;
+        }
+    }
+
+    &--3{
+        box-shadow: 0 3px 1rem rgba(#cc6699,0.4); 
+        color: #cc6699; 
+    }
+
+    &--4{
+        box-shadow: 0 3px 1rem rgba(#dfc81d,0.5); 
+        color: #f7df1e; 
+        position: relative;
+        top: 6rem;
+        @include query(tabp){
+            top:0;
+        }
+        
+    }
+
+    &--5{
+        box-shadow: 0 3px 1rem rgba(#f05032,0.4); 
+        color: #f05032; 
+    }
+
+
+    &__icon{
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+}

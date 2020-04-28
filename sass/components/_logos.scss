@@ -1,0 +1,28 @@
+.logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
+    justify-items: center;
+    
+    @include query(cp){
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.logo{
+    padding: 1rem;
+    transition: all 300ms;
+    &__icon{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .youtube{
+        fill:red;
+    }
+
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: $shadow-1;
+    }
+}
