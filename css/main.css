@@ -226,6 +226,13 @@ li {
   }
 }
 
+@media only screen and (max-height: 500px) {
+  .header__title {
+    font-size: 2rem;
+    margin-top: 7rem;
+  }
+}
+
 .header__span {
   display: block;
 }
@@ -258,6 +265,15 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .navbar .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
